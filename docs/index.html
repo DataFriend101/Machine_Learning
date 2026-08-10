@@ -1217,100 +1217,207 @@
 
     <!-- REPRODUCIBILITY -->
 
-    <section id="reproducibility">
-        <div class="section-number">08 · Reproducibility</div>
-        <h2>Explore the project</h2>
+<section id="reproducibility">
+    <div class="section-number">08 · Reproducibility</div>
+    <h2>Explore the project</h2>
 
-        <p>
-            The public repository contains the project work and the capstone
-            notebook used to document the analysis.
-        </p>
+    <p>
+        The analysis was built step by step across the project notebooks.
+        Each notebook documents one part of the workflow, from the original
+        research question through validation and the final action playbook.
+    </p>
 
-        <div class="grid">
+    <div class="grid">
 
-            <div class="card">
-                <h3>Capstone notebook</h3>
-
-                <p>
-                    The notebook mirrors the research paper and documents the
-                    question, data, methodology, results, limitations, and
-                    recommendations.
-                </p>
-
-                <a
-                    href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/capstone.ipynb"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    View capstone notebook →
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Project repository</h3>
-
-                <p>
-                    The repository contains the public project artifacts,
-                    notebooks, data documentation, and deployed research page.
-                </p>
-
-                <a
-                    href="https://github.com/DataFriend101/Machine_Learning"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    View GitHub repository →
-                </a>
-            </div>
-
+        <div class="card">
+            <h3>Research question</h3>
+            <p>
+                Defines the problem, research question, and decision the
+                analysis is intended to support.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w01_research_question.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Research question →
+            </a>
         </div>
-    </section>
+
+        <div class="card">
+            <h3>Task framing</h3>
+            <p>
+                Frames the machine-learning task, target, and evaluation
+                approach.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w02_ml_task_framing.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Task framing →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Data contract</h3>
+            <p>
+                Documents the data structure, fields, assumptions, and
+                public-safe analysis boundaries.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w03_data_contract.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Data contract →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Leakage check</h3>
+            <p>
+                Audits the features and workflow for potential label,
+                temporal, and decision-derived leakage.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w03_feature_leakage_check.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Leakage check →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Baseline score</h3>
+            <p>
+                Establishes the Week 4 baseline used for comparison with
+                the machine-learning model.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w04_baseline_score.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Baseline score →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Signal audit</h3>
+            <p>
+                Examines the available signals and identifies useful
+                patterns for the modeling workflow.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w04_signal_audit.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Signal audit →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Model building</h3>
+            <p>
+                Builds and evaluates the Random Forest model against the
+                baseline using client-grouped validation.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w05_model.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Model building →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Validation audit</h3>
+            <p>
+                Tests the model across five client-grouped folds to assess
+                how consistent the results are across client groups.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w06_validation_audit.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Validation audit →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Action playbook</h3>
+            <p>
+                Turns the model findings into ranked actions and a
+                human-review workflow.
+            </p>
+            <a
+                href="https://github.com/DataFriend101/Machine_Learning/blob/main/work/notebooks/w07_action_playbook.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Action playbook →
+            </a>
+        </div>
+
+    </div>
+
+    <div class="callout">
+        <strong>Reproducible workflow:</strong>
+        Research question → Task framing → Data contract → Leakage check →
+        Baseline → Signal audit → Model building → Validation audit →
+        Action playbook.
+    </div>
+
+    <p>
+        The complete project repository is available on GitHub, including
+        the notebooks and public-safe project artifacts.
+    </p>
+
+    <a
+        href="https://github.com/DataFriend101/Machine_Learning"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        View the full project repository →
+    </a>
+
+</section>
 
 
+    
     <!-- ACKNOWLEDGMENTS -->
 
-    <section id="credit">
-        <div class="credit">
+<section id="credit">
+    <div class="credit">
 
-            <div class="section-number">09 · Acknowledgments & Data Credit</div>
+        <div class="section-number">09 · Acknowledgments & Data Credit</div>
 
-            <h2>Data credit</h2>
+        <h2>Data credit</h2>
 
-            <p>
-                Built on the FlyRank ML Internship dataset.
-            </p>
+        <p>
+            Built on the FlyRank ML Internship dataset.
+        </p>
 
-            <p>
-                This project was completed as part of my Machine Learning
-                internship work with FlyRank.
-            </p>
+        <p>
+            This project was completed as part of my Machine Learning
+            internship work with FlyRank.
+        </p>
 
-            <p>
-                <strong>Data Source:</strong>
-                <a
-                    href="https://huggingface.co/datasets/FlyRank/internship-warehouse"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    FlyRank ML Internship Dataset
-                </a>
-            </p>
+        <p>
+            Data source:
+            <a
+                href="https://flyrank.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                FlyRank
+            </a>
+        </p>
 
-        </div>
-    </section>
-
-</main>
-
-
-<footer>
-    <p>
-        FlyRank ML Internship · Machine Learning Capstone
-    </p>
-
-    <p>
-        Public-safe research artifact · Built for decision support, not automated content decisions
-    </p>
-</footer>
-
-</body>
-</html>
+    </div>
+</section>
