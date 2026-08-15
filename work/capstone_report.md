@@ -3,7 +3,7 @@ Capstone Report
 
     Author: Sofia Bourjeily
     Lane: Refresh / Content Opportunity Scoring
-    Repo: [GitHub Repository](https://github.com/DataFriend101/Machine_Learning/tree/main/work/notebooks)
+    Repo: https://github.com/DataFriend101/Machine_Learning/tree/main/work/notebooks
     Date: 15/08/2026
 
 ## 1. Problem framing
