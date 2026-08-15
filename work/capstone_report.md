@@ -3,10 +3,10 @@ Capstone Report
 
     Author: Sofia Bourjeily
     Lane: Refresh / Content Opportunity Scoring
-    Repo: https://github.com/DataFriend101/Machine_Learning/tree/main/work/notebooks
+    Repo: [GitHub Repository](https://github.com/DataFriend101/Machine_Learning/tree/main/work/notebooks)
     Date: 15/08/2026
 
-1. Problem framing
+## 1. Problem framing
 
 This project asks whether content at risk of declining can be identified early enough to prioritize which pages should receive attention.
 
@@ -16,7 +16,7 @@ A human editor can use the ranking to investigate a page and decide whether a re
 
 Data and ML help by combining multiple observable performance and content signals into a consistent ranking rather than relying only on a simple rule or manually reviewing every page.
 
-2. Data safety
+## 2. Data safety
 
 This analysis uses the FlyRank ML Internship dataset, release flyrank_pseudonymized_warehouse_release_v20260703, using the anonymized content_refresh_anonymized.csv slice provided for the internship.
 
@@ -30,7 +30,7 @@ I checked for label-derived, future/overlapping information, and decision-derive
 
 No client-identifying information appears in the published analysis.
 
-3. Baseline
+## 3. Baseline
 
 The Week 4 baseline ranked pages using a simple combination of recent visibility and CTR opportunity.
 
@@ -42,7 +42,7 @@ Base rate: 0.511
 Week 4 baseline Precision@50: 0.440
 Random Forest Precision@50: 0.680
 
-4. Model / analysis
+## 4. Model / analysis
 
 I used a Random Forest classifier because it can capture nonlinear relationships and interactions between multiple content-performance signals.
 
@@ -60,7 +60,7 @@ The target was is_declining_label, where 1 = trend_direction == "down" and 0 = o
 
 The Random Forest used 200 trees, random_state=42, and balanced class weights.
 
-5. Evaluation
+## 5. Evaluation
 
 The primary evaluation used an 80/20 client-grouped split with random_state=42, keeping pages from the same client entirely in either training or testing.
 
@@ -72,7 +72,7 @@ The approach was also evaluated using 5-fold client-grouped validation. Precisio
 
 The variation across folds shows that performance differs across client groups.
 
-6. Interpretation
+## 6. Interpretation
 
 The strongest Random Forest feature importances were:
 
@@ -86,7 +86,7 @@ This means recent visibility, observed ranking, and content age contributed most
 
 These are feature importance values, not causal effects. The results show measured associations with the observed decline label rather than evidence that changing any feature will cause performance to improve.
 
-7. Recommendation
+## 7. Recommendation
 The model should be used as a prioritization layer for human review.
 
 The recommended workflow is:
@@ -99,7 +99,7 @@ The model should not automatically rewrite, publish, delete, redirect, or otherw
 
 The results are directional and should be treated as decision support. They may not generalize to every client, content type, or search environment.
 
-8. Reproducibility
+## 8. Reproducibility
 The analysis is organized across the project notebooks covering the research question, task framing, data contract, leakage checks, baseline, signal audit, model training, validation, action playbook, and paper deployment.
 
 The main model uses random_state=42, with an 80/20 client-grouped split. The environment should be recreated using the project's requirements.txt.
